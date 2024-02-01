@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Eventos DOM</title>
+</head>
+<body>
+    <h1>Eventos DOM</h1>
+
+    <div id="id_area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja aqui...
+    </div>
+
+    <!-- 
+        ----- EVENTOS DOM -----
+
+        // JAVASCRIPT DOM EVENTS LIST - Event Reference
+        São todos os eventos que podem acontecer com um elemento, exemplo:
+
+
+        ~> EVENTOS DE MOUSE
+
+        - mouseenter: mouse entra no elemento
+        - mouseout: mouse sai do elemento
+        - mousemove: mouse se move dentro do elemento
+        - mousedown: mouse com M1 pressionado
+        - mouseup: mouse com M1 saiu do estado pressionado para solto
+        - click: mouse vai de mousedown e mouseup rapidamente, igual um clique
+    
+     -->
+
+    <!-- 
+        ----- FUNÇÕES -----
+
+        É um conjunto de código que vão ser executadas quando um evento acontecer
+        
+        // function acao(parametro){
+        //     
+        // }
+     -->
+
+    <script>
+        var area = window.document.getElementById('id_area')
+
+        /* 
+            --- LISTENERS ---
+
+            Caso coloque esses Listeners, não há a necessidade de colocar as funções nas TAGs desejadas
+        */
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+
+        function clicar() {
+            area.innerText = 'Clicou!'
+        }
+
+        function entrar() {
+            area.style.backgroundColor = 'gray'   
+        }
+
+        function sair(){
+            area.style.backgroundColor = '#F2EFDC'
+        }
+    </script>
+</body>
+</html>

@@ -17,3 +17,15 @@ body{
     text-align: center;
     color: #F2EFDC;
 }
+
+div#id_area{
+    width: 30%;
+    background-color: #F2EFDC;
+    color: #1B4039;
+
+    font-weight: bold;
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+}
