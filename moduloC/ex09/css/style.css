@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #598C4A, #1B4039);
+    padding: 3%;
+    text-align: center;
+    color: #F2EFDC;
+}
+
+div#id_area{
+    width: 30%;
+    background-color: #F2EFDC;
+    color: #1B4039;
+
+    font-weight: bold;
+
+    margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+}

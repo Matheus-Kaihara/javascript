@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Outros Eventos DOM</title>
+</head>
+<body>
+    <h1>Eventos DOM - 2</h1>
+    <h2>Somando Valores</h2>
+
+    <input type="number" name="textNumber1" id="id_textNumber1">
+    <input type="number" name="textNumber2" id="id_textNumber2">
+    <input type="button" value="Somar" id="id_somar" onclick="calcularSoma()">
+
+    <p id="resultado"></p>
+    <!-- 
+
+     -->
+
+
+     <script>
+
+        function calcularSoma(){
+            var resultado = window.document.querySelector('p#resultado')
+            var textNumber1 = window.document.querySelector('input#id_textNumber1')
+            var textNumber2 = window.document.querySelector('input#id_textNumber2')
+
+            var number1 = Number(textNumber1.value)
+            var number2 = Number(textNumber2.value)
+        
+            var sum = number1 + number2
+
+            resultado.innerHTML = `A soma entre ${number1} e ${number2} é de ${sum}`
+        }
+
+     </script>
+</body>
+</html>
