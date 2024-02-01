@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>DOM</title>
+</head>
+<body>
+    <h1>DOM - Document Object Model</h1>
+
+    <!-- 
+        -------- DOM --------
+
+        Document Object Model ou Modelo de Objetos para Documentos
+
+        - Conjunto de objetos dentro do navegador que dá acesso aos componentes do site
+
+
+        ~> ÁRVORE DOM
+
+            Árvore Hierárquica (com parent e child)
+
+            - window
+                - location
+                - document
+                    - html
+                        - head
+                            - meta
+                            - title
+                            - link
+                        - body
+                            - header
+                            - main
+                            - footer
+                - history
+     -->
+
+     <!-- 
+        --------- Selecionando os Elementos pelo DOM ----------
+
+        ~> por Marca
+        getElementsByTagName()
+            - Quando quiser usar pela TAG
+
+
+        ~> por ID
+        getElementsById()
+            - Quando quiser identificar pelo ID
+
+
+        ~> por Nome
+        getElementsByName()
+            - Quando quiser buscar pelo nome do objeto
+
+        ~> por Classe
+        getElementsByClassName()
+            - Quando quiser usar pela Class
+
+        ~> por Seletor
+        querySelector()
+        querySelectorAll()
+      --> 
+
+    <p>Aqui vai o resultado: </p>
+    <p>Aprendendo a usar o <span>DOM</span> em JavaScript</p>
+    <div id="container">Clique em mim</div>
+
+    <script>
+        // ------ POR ELEMENTO -----
+
+        // Seleciona o segundo parágrafo
+        var paragrafo1 = window.document.getElementsByTagName('p')[1] 
+        // Printa o texto
+        window.document.write(paragrafo1.innerText)
+        // Printa a linha do HTML
+        window.document.write(paragrafo1.innerText)
+
+
+        // ------ POR ID -----
+
+        var divContainer = window.document.getElementById('container')
+        divContainer.style.backgroundColor = 'black'
+        divContainer.innerText = 'Aguarde para clicar...'
+
+
+        // ----- POR CLASSE -----
+        
+        // var divContainer = window.document.getElementsByClassName('container')[0]
+        // divContainer.style.backgroundColor = 'blue'
+        // divContainer.innerText = 'Aguarde para clicar...'
+
+
+        // ----- POR SELETOR -----
+
+        // var divContainer = window.document.querySelector('div#container')
+        // divContainer.style.backgroundColor = 'red'
+        // divContainer.innerText = 'Aguarde para clicar...'
+
+
+    </script>
+</body>
+</html>
