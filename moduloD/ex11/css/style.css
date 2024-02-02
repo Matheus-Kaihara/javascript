@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/* 
+    CORES
+
+    - #FEE7C7
+    - #63C2BA
+    - #0097E6
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html{
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #63C2BA, #0097E6);
+    padding: 3%;
+    text-align: center;
+    color: #FEE7C7;
+}
