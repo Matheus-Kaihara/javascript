@@ -9,8 +9,43 @@
     <title>Condições</title>
 </head>
 <body>
-    <h1></h1>
+    <h1>Site de Multas</h1>
 
-    <script src="js/script.js"></script>
+    <!-- 
+        ----- CONDIÇÕES -----
+
+        Condição Simples
+        - if
+
+        Condição Composta
+        - if 
+        - else
+     -->
+
+    Velocidade: <input type="number" name="txtVel" id="id_txtVel"> km/h
+    <input type="button" value="Verificar" onclick="calcularVel()">
+
+    <div id="res"></div>
+
+
+    <script>
+        
+        function calcularVel(){
+
+            var txtVelocidade = window.document.querySelector('input#id_txtVel')
+
+            var resultado = window.document.querySelector('div#res')
+
+            var velocidade = Number(txtVelocidade.value)
+
+            if(velocidade > 60){
+                resultado.innerHTML = `<p>Você ultrapassou em ${velocidade} km/h o limite da via. MULTA! </p>`
+            }
+            else{
+                resultado.innerHTML = `<p>Mantenha o limite da via em ${velocidade}. Dirija com segurança!</p>`
+            }
+        }
+
+    </script>
 </body>
 </html>
