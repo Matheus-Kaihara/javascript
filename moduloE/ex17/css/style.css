@@ -19,11 +19,23 @@ html{
 
 body{
     background-image: linear-gradient(to top, #F4B882, #D38E53);
-    color: #B8B8C0;
     padding: 3%;
     text-align: center;
 }
 
+section{
+    background-color: white;
+    width: 400px;
+    height: 400px;
+
+    margin: 20px auto;
+    padding: 40px;
+
+    border-radius: 10px;
+}
+
+
 h1{
+    
     filter: drop-shadow(1px 1px 4px black);
 }

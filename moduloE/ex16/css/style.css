@@ -50,7 +50,7 @@ section input{
 }
 
 
-section input#id_button{
+/* section input#id_button{
     display: block;
     background-color: #F2EFDC;
 
@@ -66,7 +66,7 @@ section input#id_button{
 section input#id_button:hover{
     background-color: #D9D3B8;
     transition: .5s;
-}
+} */
 
 h1{
     filter: drop-shadow(1px 1px 4px black);
