@@ -1,9 +1,11 @@
-var buttonCal = window.document.querySelector('input#id_button')
-buttonCal.addEventListener('click', calcular())
-
 function calcular(){
-    let tabuada = window.document.querySelectorw('input#id_tabuada')
-    let textoTabuada = window.document.querySelector('div#txtTabuada')
+    
+
+
+    let tabuada = window.document.querySelector('input#id_tabuada')
+    let txtTabuada = window.document.querySelector('div#id_txtTabuada')
+
+    txtTabuada.innerHTML = ''
 
     let t = Number(tabuada.value)
 
@@ -11,6 +13,7 @@ function calcular(){
 
         let calculo = contador * t
 
-        textoTabuada.innerHTML += `${contador} x ${t} = ${calculo}\n`
+        txtTabuada.innerHTML += `${contador} x ${t} = ${calculo} <br>`
     }
 }
+

@@ -23,6 +23,11 @@ body{
     text-align: center;
 }
 
+h1{
+    
+    filter: drop-shadow(1px 1px 4px black);
+}
+
 section{
     background-color: white;
     width: 400px;
@@ -34,8 +39,6 @@ section{
     border-radius: 10px;
 }
 
-
-h1{
-    
-    filter: drop-shadow(1px 1px 4px black);
+div#id_txtTabuada{
+    margin-top: 20px;
 }
