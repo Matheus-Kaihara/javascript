@@ -1,5 +1,4 @@
 function calcular(){
-    
 
 
     let tabuada = window.document.querySelector('input#id_tabuada')
