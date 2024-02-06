@@ -50,23 +50,22 @@ section input{
 }
 
 
-/* section input#id_button{
-    display: block;
+section div#button-container{
+    margin: auto;
+}
+
+section .id_button{
     background-color: #F2EFDC;
-
-    width: 70px;
-
-
     margin: 15px auto;
     padding: 5px;
-
+    
     border-radius: 5px;
 }
 
-section input#id_button:hover{
+section input.id_button:hover{
     background-color: #D9D3B8;
     transition: .5s;
-} */
+}
 
 h1{
     filter: drop-shadow(1px 1px 4px black);

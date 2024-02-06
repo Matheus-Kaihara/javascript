@@ -13,17 +13,21 @@
     <h1>Vamos Contar</h1>
     <section>
         <label for="id_inicio">Início: </label>
-        <input type="number" name="inicio" id="id_inicio">
+        <input type="number" name="inicio" id="id_inicio" required>
 
         <label for="id_fim">Fim: </label>
-        <input type="number" name="fim" id="id_fim">
+        <input type="number" name="fim" id="id_fim" required>
 
         <label for="id_passo">Passo:</label>
-        <input type="number" name="passo" id="id_passo">
+        <input type="number" name="passo" id="id_passo" required>
 
-        <input type="button" value="Contar" id="id_button" onclick="contar()">
 
-        <p>Contando:</p>
+        <div id="button-container">
+            <input type="button" value="Contar" class="id_button" onclick="contar()">
+            
+            <input type="button" value="Limpar" class="id_button" onclick="limpar()">
+        </div>
+        <p id="id_txtContando">Contando:</p>
         <div id="id_txtNumero">
         </div>
     </section>
