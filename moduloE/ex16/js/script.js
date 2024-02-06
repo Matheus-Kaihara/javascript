@@ -13,6 +13,11 @@ function contar(){
     } else{
 
         let paragraph = document.querySelector('p#id_txtContando')
+
+        // MÉTODO PARA LIMPAR OS CAMPOS
+        txtNumero.innerHTML = ''
+        paragraph.innerHTML = 'Contando:'
+
         // ORDEM CRESCENTE
         if(i < f){
             paragraph.innerHTML += ' em Ordem Crescente'
@@ -30,12 +35,4 @@ function contar(){
         
         txtNumero.innerHTML += '🔰'
     }
-}
-
-function limpar(){
-    let txtNumero = document.querySelector('div#id_txtNumero')
-    let paragraph = document.querySelector('p#id_txtContando')
-
-    txtNumero.innerHTML = ''
-    paragraph.innerHTML = 'Contando:'
 }
