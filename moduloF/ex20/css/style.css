@@ -29,6 +29,12 @@ h1{
     filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.466));
 }
 
+p{
+    color: black;
+    margin: 5px 30px;
+    text-align: start;
+}
+
 section{
     background-color: white;
     width: 600px;
